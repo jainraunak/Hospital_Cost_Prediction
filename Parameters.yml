@@ -1,0 +1,31 @@
+# Parts to be done. Can take values from : ["a","b","c"]
+parts:
+  - "a"
+  - "b"
+  - "c"
+
+train_data : "data/train.csv"    # Location where training data is stored
+test_data : "data/test.csv"      # Location where test data is stored
+
+results_path : "Results/"        # Location to save results
+
+regularisation_penalty :            # Regularisation Penalties to be used in ridge regression for Part b
+  - 100
+  - 50
+  - 10
+  - 5
+  - 1
+  - 0.5
+  - 0.1
+  - 0.01
+  - 0.001
+
+k : 10                            # k of k-fold CV
+
+verify_results : true             # Whether to verify results for Part a and b
+
+get_features_importance : true     # Whether to get important features using Lasso Regression. Used in part c.
+
+regularisation_penalty_lower_limit : 0.001   # Lower Limit of regularisation penalty for Part c
+regularisation_penalty_upper_limit : 0.1     # Upper Limit of regularisation penalty for Part c
+random_searches : 5                          # Number of random searches for finding the best regularisation penalty. Used in Part c.
