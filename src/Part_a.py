@@ -1,8 +1,11 @@
-from src.models.LinearRegression import LinearRegression
-import numpy as np
 import os
 
-def solve_a(X_train,Y_train,X_test,results_path):
+import numpy as np
+
+from src.models.LinearRegression import LinearRegression
+
+
+def solve_a(X_train, Y_train, X_test, results_path):
     """
     Do Part a i.e. use linear regression to predict total costs.
     :param X_train: Training data
@@ -13,15 +16,15 @@ def solve_a(X_train,Y_train,X_test,results_path):
     """
 
     model = LinearRegression()
-    model.fit(X=X_train,Y=Y_train)
+    model.fit(X=X_train, Y=Y_train)
     prediction = model.predict(X=X_test)
-    weights = model.weight          # weights of the features
+    weights = model.weight  # weights of the features
 
-    results_path = os.path.join(results_path,"Part_a")
+    results_path = os.path.join(results_path, "Part_a")
     try:
         os.mkdir(results_path)
     except:
         do_nothing = True
 
-    np.savetxt(os.path.join(results_path,"weights.txt"),weights)
-    np.savetxt(os.path.join(results_path,'predictions.txt'),prediction)
+    np.savetxt(os.path.join(results_path, "weights.txt"), weights)
+    np.savetxt(os.path.join(results_path, 'predictions.txt'), prediction)

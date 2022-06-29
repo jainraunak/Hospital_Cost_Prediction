@@ -1,15 +1,21 @@
-from src.models.RidgeRegression import RidgeRegression
-from src.models.LassoRegression import LassoRegression
-from src.CrossValidation import KFoldCrossValidation
-from src.feature_engineering import feature_engineering
-from termcolor import colored
-import matplotlib.pyplot as plt
-import numpy as np
+import math
 import os
-import pandas as pd
 import random
 
-def plots(predictions,actual,results_path,LOS):
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from termcolor import colored
+
+from src.CrossValidation import KFoldCrossValidation
+from src.feature_engineering import feature_engineering
+from src.models.LassoRegression import LassoRegression
+from src.models.RidgeRegression import RidgeRegression
+
+plt.rcParams['figure.figsize'] = [10, 10]
+
+
+def plots(predictions, actual, results_path, LOS):
     """
     Make plots
     :param predictions: Predicted values
@@ -19,51 +25,78 @@ def plots(predictions,actual,results_path,LOS):
     :return: Nothing
     """
 
-    residuals = predictions-actual
+    residuals = predictions - actual
 
-    results_path = os.path.join(results_path,'Plots')
+    results_path = os.path.join(results_path, 'Plots')
     try:
         os.mkdir(results_path)
     except:
         do_nothing = True
 
     # Create Total Costs vs LOS plot
-    plt.scatter(LOS,actual,s=1)
+    plt.scatter(LOS, actual, s=1)
     plt.title('Total Costs vs Length of Stay')
     plt.xlabel('Length of Stay')
     plt.ylabel('Total Costs')
-    plt.savefig(os.path.join(results_path,'TotalCostsVsLOS.png'))
+    plt.savefig(os.path.join(results_path, 'TotalCostsVsLOS.png'))
     plt.clf()
 
     # Create Predicted Total Costs vs Actual Total Costs plot
-    val = np.polyfit(x=actual,y=predictions,deg=1)
+    val = np.polyfit(x=actual, y=predictions, deg=1)
     m = val[0]
     b = val[1]
-    plt.scatter(actual,predictions,s=1)
-    plt.plot(actual,m*actual+b,c='k')   # Best fit line
+    plt.scatter(actual, predictions, s=1)
+    plt.plot(actual, m * actual + b, c='k')  # Best fit line
     plt.title('Predictions vs Actual')
     plt.xlabel('Actual')
     plt.ylabel('Predictions')
-    plt.savefig(os.path.join(results_path,'PredictionsVsActual.png'))
+    plt.savefig(os.path.join(results_path, 'PredictionsVsActual.png'))
     plt.clf()
 
     # Create residuals vs Actual Total Costs plot
-    plt.scatter(actual,residuals,s=1)
+    plt.scatter(actual, residuals, s=1)
     plt.title('Residuals vs Actual')
     plt.xlabel('Actual')
     plt.ylabel('Residuals')
-    plt.savefig(os.path.join(results_path,'ResidualsVsActual.png'))
+    plt.savefig(os.path.join(results_path, 'ResidualsVsActual.png'))
     plt.clf()
 
     # Create histogram plot of residuals
-    plt.hist(residuals)
+    plt.hist(residuals, bins=1000, range=(-1e5, 1e5))
     plt.title('Density Plot of Residuals')
     plt.ylabel('Count')
     plt.xlabel('Residuals')
-    plt.savefig(os.path.join(results_path,'Histogram.png'))
+    plt.savefig(os.path.join(results_path, 'Histogram.png'))
     plt.clf()
 
-def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lower_limit,reg_upper_limit,random_searches):
+
+def use_correlation(X_train, Y_train, X_test):
+    """
+    Find the best power p of a feature so that power(feature,p) and Y_train have high absolute value of correlation.
+    :param X_train: Training data
+    :param Y_train: Training labels
+    :param X_test: Test data
+    :return: X_train and X_test with updated values
+    """
+
+    for idx in range(X_train.shape[1]):
+        p = 0.1
+        max_corr = 0
+        best_p = 0.1
+        while (p <= 1.5):
+            corr = abs(np.corrcoef(Y_train, np.power(X_train[:, idx], p))[0][1])
+            if corr > max_corr:
+                max_corr = corr
+                best_p = p
+            p += 0.1
+        X_train[:, idx] = np.power(X_train[:, idx], best_p)
+        X_test[:, idx] = np.power(X_test[:, idx], best_p)
+
+    return X_train, X_test
+
+
+def solve_c(train_data, test_data, results_path, k, get_features_importance, reg_lower_limit, reg_upper_limit,
+            random_searches):
     """
     Do part c i.e. use feature engineering to improve model performance.
     :param train_data: Training data
@@ -78,9 +111,9 @@ def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lowe
     :return: Nothing
     """
 
-    X_train = train_data.iloc[:,1:-1]
+    X_train = train_data.iloc[:, 1:-1]
     Y_train = np.asarray(train_data['Total Costs'].values)
-    X_test = test_data.iloc[:,1:-1]
+    X_test = test_data.iloc[:, 1:-1]
 
     col = np.ones(X_train.shape[0])
     X_train['bias'] = col
@@ -89,11 +122,12 @@ def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lowe
 
     model = RidgeRegression(penalty=0.001)
     without_feature_engineering_k_fold_r2_score = KFoldCrossValidation(X_train=np.asarray(X_train),
-                                                                       Y_train=Y_train,model=model,k=k)
+                                                                       Y_train=Y_train, model=model, k=k)
 
     print(colored(str(k) + '-Fold R2 Score (Without Feature Engineering) : ' +
-                  str(without_feature_engineering_k_fold_r2_score),'cyan'))
+                  str(without_feature_engineering_k_fold_r2_score), 'cyan'))
 
+    print(colored('Feature Engineering started ...', 'cyan'))
     # Remove outliers
     non_outliers = (Y_train <= 2e5)
     Y_train = Y_train[non_outliers]
@@ -104,19 +138,22 @@ def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lowe
     # Feature Engineering
     data = feature_engineering(data=data)
 
-    index_bias = list(data.columns).index('bias')       # Index of bias in features list
+    index_bias = list(data.columns).index('bias')  # Index of bias in features list
 
     X_train = np.asarray(data.iloc[0:X_train.shape[0]])
     X_test = np.asarray(data.iloc[X_train.shape[0]:])
 
-    print(colored('Finished Feature Engineering','cyan'))
+    X_train, X_test = use_correlation(X_train=X_train, Y_train=Y_train, X_test=X_test)
 
-    best_r2_score = 0       # Best k-fold R2 score
-    bp = None               # Best Ridge Regression Penalty
-    df_result = pd.DataFrame(columns=['Ridge Penalty',str(k)+' - fold R2 Score'])
+    print(colored('Finished Feature Engineering', 'cyan'))
+    print(colored('Finding best regularisation penalty started ...', 'cyan'))
+
+    best_r2_score = 0  # Best k-fold R2 score
+    bp = 0  # Best Ridge Regression Penalty
+    df_result = pd.DataFrame(columns=['Ridge Penalty', str(k) + ' - fold R2 Score'])
     for idx in range(random_searches):
-        l = random.uniform(reg_lower_limit,reg_upper_limit)
-        model = RidgeRegression(penalty=l,index_bias=index_bias)
+        l = random.uniform(reg_lower_limit, reg_upper_limit)
+        model = RidgeRegression(penalty=l, index_bias=index_bias)
         score = KFoldCrossValidation(X_train=X_train, Y_train=Y_train, model=model, k=k)
 
         dic = {'Ridge Penalty': l, str(k) + ' - fold R2 Score': score}
@@ -126,17 +163,17 @@ def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lowe
             best_r2_score = score
             bp = l
 
-    print(colored('Best '+str(k)+'-Fold R2 Score after feature engineering : '+str(best_r2_score),'cyan'))
+    print(colored('Best ' + str(k) + '-Fold R2 Score after feature engineering : ' + str(best_r2_score), 'cyan'))
 
-    improvemet_r2_score = (best_r2_score-without_feature_engineering_k_fold_r2_score)*100
+    improvemet_r2_score = (best_r2_score - without_feature_engineering_k_fold_r2_score) * 100
     improvemet_r2_score /= without_feature_engineering_k_fold_r2_score
-    improvemet_r2_score = round(improvemet_r2_score,2)
+    improvemet_r2_score = round(improvemet_r2_score, 2)
 
-    print(colored('Improvement in '+str(k)+' - Fold R2 Score due to feature engineering : '
-                  +str(improvemet_r2_score)+' %','cyan'))
+    print(colored('Improvement in ' + str(k) + ' - Fold R2 Score due to feature engineering : '
+                  + str(improvemet_r2_score) + ' %', 'cyan'))
 
-    model = RidgeRegression(penalty=bp,index_bias=index_bias)
-    model.fit(X=X_train,Y=Y_train)
+    model = RidgeRegression(penalty=bp, index_bias=index_bias)
+    model.fit(X=X_train, Y=Y_train)
     predictions = model.predict(X=X_test)
     weights = model.weight
 
@@ -148,11 +185,11 @@ def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lowe
 
     np.savetxt(os.path.join(results_path, "weights.txt"), weights)
     np.savetxt(os.path.join(results_path, "predictions.txt"), predictions)
-    df_result.to_csv(os.path.join(results_path, "results_ridge_penalty.csv"),index=False)
+    df_result.to_csv(os.path.join(results_path, "results_ridge_penalty.csv"), index=False)
 
     train_predictions = model.predict(X_train)
 
-    plots(predictions=train_predictions,actual=Y_train,
+    plots(predictions=train_predictions, actual=Y_train,
           results_path=results_path,
           LOS=data['Length of Stay'][0:X_train.shape[0]].values)
 
@@ -160,22 +197,37 @@ def solve_c(train_data,test_data,results_path,k,get_features_importance,reg_lowe
         # Use Lasso Regression to get feature importance
         print(colored('Calculating Importance of features ...', 'cyan'))
         model = LassoRegression(penalty=bp)
-        model.fit(X=X_train,Y=Y_train)
+        model.fit(X=X_train, Y=Y_train)
         weights = model.weight
         features_importance = []
+        correlation = []
         feature_names = data.columns
-        for idx,coef in enumerate(weights):
-            importance = abs(coef)*np.mean(X_train[:,idx])      # Importance of that feature
-            features_importance.append((feature_names[idx],importance))
+        for idx, coef in enumerate(weights):
+            importance = abs(coef) * np.mean(X_train[:, idx])  # Importance of that feature
+            features_importance.append((feature_names[idx], importance))
 
-        features_importance.sort(key=lambda x: x[1],reverse=True)
+        for idx in range(X_train.shape[1]):
+            corr = abs(np.corrcoef(Y_train, X_train[:, idx])[0][1])
+            if math.isnan(corr) is False:
+                correlation.append((feature_names[idx], corr))
 
-        with open(os.path.join(results_path, "features_importance.txt"),'w') as f:
-            f.write('Feature importance from highest to lowest : '+'\n')
+        features_importance.sort(key=lambda x: x[1], reverse=True)
+        correlation.sort(key=lambda x: x[1], reverse=True)
+
+        with open(os.path.join(results_path, "features_importance.txt"), 'w') as f:
+            f.write('Feature importance from highest to lowest : ' + '\n')
             f.write('\n')
             idx = 1
-            for feature,importance in features_importance:
-                f.write(str(idx)+'. '+feature+' : '+ str(importance) +'\n')
+            for feature, importance in features_importance:
+                f.write(str(idx) + '. ' + feature + ' : ' + str(importance) + '\n')
+                idx += 1
+
+        with open(os.path.join(results_path, "correlation.txt"), 'w') as f:
+            f.write('Correlation between features and Total Costs from highest to lowest : ' + '\n')
+            f.write('\n')
+            idx = 1
+            for feature, corr in correlation:
+                f.write(str(idx) + '. ' + feature + ' : ' + str(corr) + '\n')
                 idx += 1
 
         print(colored('Importance of features calculated', 'cyan'))

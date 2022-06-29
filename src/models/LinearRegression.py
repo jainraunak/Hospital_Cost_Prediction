@@ -1,10 +1,11 @@
 import numpy as np
 
+
 class LinearRegression:
     def __init__(self):
         self.weight = None
 
-    def fit(self,X,Y):
+    def fit(self, X, Y):
         """
         Learn weights for features using Linear Regression
         :param X: Training data
@@ -17,7 +18,7 @@ class LinearRegression:
         D = np.linalg.inv(B)
         self.weight = np.matmul(D, C)
 
-    def predict(self,X):
+    def predict(self, X):
         """
         Prediction using linear regression
         :param X: Test data

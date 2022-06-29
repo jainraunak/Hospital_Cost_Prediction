@@ -1,6 +1,7 @@
 import numpy as np
 from termcolor import colored
 
+
 def verify_part_b():
     """
     Verifying results of Part b.
@@ -20,8 +21,10 @@ def verify_part_b():
         print(colored("Weight file of wrong dimensions for part b", "red"))
         exit()
 
-    pred_error = np.sum(np.square(predicted_output - actual_output)) / np.sum(np.square(predicted_output))   # Error in output
-    weight_error = np.sum(np.square(predicted_weights - actual_weights)) / np.sum(np.square(actual_weights)) # Error in weights
+    pred_error = np.sum(np.square(predicted_output - actual_output)) / np.sum(
+        np.square(predicted_output))  # Error in output
+    weight_error = np.sum(np.square(predicted_weights - actual_weights)) / np.sum(
+        np.square(actual_weights))  # Error in weights
 
     print(colored("Error in Predictions for part b : " + str(pred_error), "green"))
     print(colored("Error in Weights for part b : " + str(weight_error), "green"))

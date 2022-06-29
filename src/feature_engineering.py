@@ -1,6 +1,7 @@
 import numpy as np
 
-def onehotencoding(data,feature_name,target_feature,high_freq_features):
+
+def onehotencoding(data, feature_name, target_feature, high_freq_features):
     """
     Do one hot encoding of the feature = feature_name
     :param data: data including both train and test data
@@ -9,17 +10,18 @@ def onehotencoding(data,feature_name,target_feature,high_freq_features):
     :param high_freq_features: features having high unique values
     :return: one hot encoded data
     """
-    unique_list = data[feature_name].value_counts(sort=True,ascending=False).index
+    unique_list = data[feature_name].value_counts(sort=True, ascending=False).index
     n_arr = np.asarray(data[feature_name].values)
     target_arr = np.asarray(data[target_feature].values)
-    for idx,value in enumerate(unique_list):
-        data[feature_name+'_'+str(idx)] = np.where(n_arr == value,target_arr,0)
+    for idx, value in enumerate(unique_list):
+        data[feature_name + '_' + str(idx)] = np.where(n_arr == value, target_arr, 0)
         if idx >= 20 and feature_name in high_freq_features:
             # Get one hot encoding of best 20 values only
             break
     return data
 
-def multifeature_onehotencoding(data,feature_name1,feature_name2,target_feature):
+
+def multifeature_onehotencoding(data, feature_name1, feature_name2, target_feature):
     """
     Do multi feature one hot encoding of 2 features feature_name1 and feature_name2
     :param data: Data including both training and test data
@@ -35,12 +37,13 @@ def multifeature_onehotencoding(data,feature_name1,feature_name2,target_feature)
     n_arr2 = np.asarray(data[feature_name2].values)
     target_arr = np.asarray(data[target_feature].values)
     cnt = 0
-    for idx1,value1 in enumerate(unique_list1):
-        for idx2,value2 in enumerate(unique_list2):
+    for idx1, value1 in enumerate(unique_list1):
+        for idx2, value2 in enumerate(unique_list2):
             data[feature_name1 + '_' + feature_name2 + '_' + str(cnt)] = np.where(
                 (n_arr1 == value1) & ((n_arr2 == value2)), target_arr, 0)
             cnt += 1
     return data
+
 
 def feature_engineering(data):
     """
@@ -80,4 +83,3 @@ def feature_engineering(data):
     data.drop(features_to_drop, inplace=True, axis=1)
 
     return data
-

@@ -1,12 +1,13 @@
 import numpy as np
 
-class RidgeRegression:
-    def __init__(self, penalty = 0.001, index_bias = -1):
-        self.weight = None
-        self.penalty = penalty            # Ridge Regression Penalty
-        self.index_bias = index_bias      # Index of bias column
 
-    def fit(self,X,Y):
+class RidgeRegression:
+    def __init__(self, penalty=0.001, index_bias=-1):
+        self.weight = None
+        self.penalty = penalty  # Ridge Regression Penalty
+        self.index_bias = index_bias  # Index of bias column
+
+    def fit(self, X, Y):
         """
         Learn weights for features using ridge regression
         :param X: Training data
@@ -19,12 +20,12 @@ class RidgeRegression:
         nr = X.shape[1]
         Q = np.zeros((nr, nr))
         np.fill_diagonal(Q, self.penalty)
-        Q[self.index_bias][self.index_bias] = 0     # Don't penalise bias
+        Q[self.index_bias][self.index_bias] = 0  # Don't penalise bias
         D = np.add(B, Q)
         P = np.linalg.inv(D)
         self.weight = np.matmul(P, C)
 
-    def predict(self,X):
+    def predict(self, X):
         """
         Prediction using ridge regression
         :param X: Test data
