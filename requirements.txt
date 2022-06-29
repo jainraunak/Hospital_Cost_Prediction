@@ -1,0 +1,6 @@
+matplotlib == 3.5
+numpy == 1.22.0
+pandas == 1.4.3
+pyyaml == 5.3.1
+sklearn
+termcolor
