@@ -7,7 +7,7 @@ of a patient based on patient disease, hospital types, etc.
 
 ### Applications of this Project
 - A patient can see whether he/she has been charged properly by the hospital.
-- Bases on estimated cost, a patient can decide the hospital to be admitted in. 
+- Based on estimated cost, a patient can decide the hospital to be admitted in. 
 - Can see which hospitals are overcharging.
 
 ### Data 
