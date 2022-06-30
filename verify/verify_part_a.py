@@ -22,7 +22,7 @@ def verify_part_a():
         exit()
 
     pred_error = np.sum(np.square(predicted_output - actual_output)) / np.sum(
-        np.square(predicted_output))  # Error in output
+        np.square(actual_output))  # Error in output
     weight_error = np.sum(np.square(predicted_weights - actual_weights)) / np.sum(
         np.square(actual_weights))  # Error in weights
 

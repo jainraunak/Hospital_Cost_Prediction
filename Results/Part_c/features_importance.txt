@@ -1,334 +1,334 @@
 Feature importance from highest to lowest : 
 
-1. Health Service Area : 5538.0085087494845
-2. Length of Stay : 4457.867447645739
-3. Emergency Department Indicator : 3350.0270075345143
-4. APR Medical Surgical Description_1 : 2123.6803204135035
-5. APR Severity of Illness Code : 1582.5413639311369
-6. APR MDC Description : 1567.0114010833872
-7. Facility Name : 1404.222063110783
-8. APR Medical Surgical Description_0 : 1298.2265229338436
-9. CCS Procedure Description_0 : 860.3825110019385
-10. CCS Procedure Description : 708.8455534431129
-11. Zip Code - 3 digits : 601.9795978273589
-12. Health Service Area_Emergency Department Indicator_0 : 578.4853065787446
-13. Operating Certificate Number_0 : 333.4650334533581
-14. CCS Diagnosis Description : 315.54149136046277
-15. Health Service Area_Emergency Department Indicator_1 : 267.4325737428048
-16. APR MDC Description_0 : 261.6109437105726
-17. APR DRG Description_0 : 253.01151501289928
-18. APR Risk of Mortality_0 : 220.33631939725487
-19. APR Risk of Mortality_3 : 213.2961553571184
-20. APR MDC Description_8 : 188.58354963904355
-21. APR Severity of Illness Description_3 : 179.33202596748586
-22. Operating Certificate Number_4 : 171.48554331398003
-23. APR DRG Description : 165.41109568484472
-24. CCS Procedure Description_6 : 154.3111097327687
-25. CCS Procedure Description_18 : 140.86236323792608
-26. APR Severity of Illness Description_1 : 131.5446854997418
-27. APR DRG Description_3 : 129.36385281641753
-28. APR MDC Description_10 : 121.27437862519055
-29. APR MDC Description_1 : 110.28422860181651
-30. Operating Certificate Number_23 : 109.91660887223229
-31. Health Service Area_Emergency Department Indicator_2 : 103.64620908572905
-32. Operating Certificate Number_29 : 94.88912080700615
-33. Payment Typology 1_0 : 92.4166609981837
-34. CCS Procedure Description_4 : 91.51622433625059
-35. APR Severity of Illness Description_2 : 79.52046210208731
-36. APR Risk of Mortality_2 : 79.2788924173725
-37. APR DRG Description_19 : 72.97942478612246
-38. Age Group_1 : 70.82589694975088
-39. Type of Admission_0 : 69.9789602849726
-40. CCS Diagnosis Description_0 : 66.8363877761951
-41. Type of Admission_1 : 58.92246238068516
-42. CCS Diagnosis Description_2 : 58.629376403902995
-43. APR DRG Description_2 : 56.786513394272646
-44. Operating Certificate Number_3 : 53.58150677997423
-45. Operating Certificate Number_1 : 52.40452683887318
-46. APR MDC Description_5 : 50.8476032936996
-47. CCS Procedure Description_7 : 50.66068202314113
-48. Operating Certificate Number_19 : 49.73037242781369
-49. Birth Weight : 42.39127537410379
-50. CCS Procedure Description_5 : 41.333889651906446
-51. CCS Procedure Description_9 : 41.10659837306112
-52. Operating Certificate Number_15 : 40.215114042352305
-53. CCS Procedure Description_8 : 38.05794819403756
-54. Operating Certificate Number_44 : 35.892923644328654
-55. Health Service Area_Emergency Department Indicator_3 : 35.43868199195914
-56. Health Service Area_Emergency Department Indicator_12 : 35.43803143897328
-57. APR Risk of Mortality_1 : 34.98251383649727
-58. Health Service Area_Emergency Department Indicator_5 : 34.06636255599078
-59. Operating Certificate Number_63 : 33.21640701440644
-60. CCS Diagnosis Description_11 : 32.55387092047077
-61. Payment Typology 1_1 : 31.163525272181854
-62. Operating Certificate Number_27 : 30.43936360135969
-63. APR MDC Description_19 : 29.540856953021063
-64. APR DRG Description_4 : 27.252580542876025
-65. Operating Certificate Number_8 : 26.263337401530144
-66. Age Group_Emergency Department Indicator_5 : 25.207486100510312
-67. Operating Certificate Number_58 : 24.622362050584247
-68. Operating Certificate Number_38 : 23.444179042059332
-69. Health Service Area_Emergency Department Indicator_13 : 23.000126043369992
-70. Operating Certificate Number_2 : 22.943597407699095
-71. CCS Diagnosis Description_19 : 21.9082690127607
-72. CCS Diagnosis Description_16 : 21.89110710370582
-73. Operating Certificate Number_49 : 21.208273485152937
-74. CCS Procedure Description_11 : 20.97645603567328
-75. Age Group_3 : 20.967693422308216
-76. Operating Certificate Number_14 : 19.208666368696104
-77. Health Service Area_Emergency Department Indicator_8 : 18.73926989614101
-78. APR DRG Description_10 : 17.738183473902648
-79. Operating Certificate Number_92 : 17.25138335654841
-80. APR DRG Description_9 : 16.961089174799177
-81. Operating Certificate Number_62 : 16.139744676107984
-82. Operating Certificate Number_17 : 16.003383937598063
-83. Operating Certificate Number_93 : 15.30696314832841
-84. CCS Diagnosis Description_8 : 14.862334398697012
-85. APR MDC Description_6 : 14.705745236097007
-86. Operating Certificate Number_57 : 14.156586905902925
-87. Operating Certificate Number_20 : 13.834672153758554
-88. Operating Certificate Number_9 : 13.17340053679729
-89. Operating Certificate Number_119 : 13.059678554639085
-90. Operating Certificate Number_31 : 12.855668504804363
-91. Age Group_Emergency Department Indicator_9 : 12.785286869880977
-92. Age Group_Emergency Department Indicator_2 : 12.76908020073543
-93. Operating Certificate Number_125 : 12.197562614050423
-94. CCS Diagnosis Description_5 : 11.707951142208632
-95. Operating Certificate Number_73 : 11.425230153458262
-96. Operating Certificate Number_88 : 10.85259481213824
-97. APR DRG Description_18 : 10.603664629517898
-98. CCS Diagnosis Description_3 : 10.586643520874922
-99. Operating Certificate Number_30 : 10.502611326641485
-100. Operating Certificate Number_41 : 10.169200993842374
-101. Operating Certificate Number_26 : 10.05272130871975
-102. Operating Certificate Number_86 : 9.886737989339679
-103. Operating Certificate Number_90 : 9.83939287860639
-104. Operating Certificate Number_21 : 9.796241464015614
-105. Operating Certificate Number_64 : 9.335737135310444
-106. Operating Certificate Number_42 : 9.191627391834237
-107. Operating Certificate Number_124 : 8.997776559890543
-108. APR MDC Description_4 : 8.688437628406577
-109. CCS Procedure Description_3 : 8.625747724018034
-110. Health Service Area_Emergency Department Indicator_10 : 8.507784221066458
-111. Operating Certificate Number_127 : 8.376132279502949
-112. APR MDC Description_16 : 8.091529786679196
-113. Operating Certificate Number_6 : 8.050278102805613
-114. Health Service Area_Emergency Department Indicator_11 : 7.804105926134873
-115. Payment Typology 1_5 : 7.421512488337223
-116. APR DRG Description_20 : 7.198268706404904
-117. Operating Certificate Number_10 : 6.894026101249035
-118. CCS Procedure Description_17 : 6.863762946232924
-119. Operating Certificate Number_112 : 6.641788423759237
-120. Operating Certificate Number_70 : 6.41548270639633
-121. Operating Certificate Number_22 : 6.40375976499212
-122. Operating Certificate Number_67 : 6.163097991995341
-123. CCS Diagnosis Description_15 : 6.1418448204660185
-124. Health Service Area_Emergency Department Indicator_9 : 6.06053705293533
-125. Operating Certificate Number_13 : 5.885812546839098
-126. APR MDC Description_11 : 5.876575317213782
-127. Operating Certificate Number_39 : 5.686887596129661
-128. Operating Certificate Number_81 : 5.6261088434433235
-129. APR DRG Description_12 : 5.276283520645178
-130. APR MDC Description_7 : 5.258813770649094
-131. APR MDC Description_21 : 5.190179699727241
-132. Operating Certificate Number_52 : 5.161649780178863
-133. CCS Procedure Description_15 : 5.064025011593397
-134. APR MDC Description_17 : 4.95389100263757
-135. Operating Certificate Number_45 : 4.747702693097382
-136. Operating Certificate Number_61 : 4.57760132559969
-137. Operating Certificate Number_48 : 4.400227825653533
-138. Operating Certificate Number_107 : 4.3747584671492366
-139. Operating Certificate Number_98 : 4.196132921276044
-140. Operating Certificate Number_84 : 3.9763445032361897
-141. Operating Certificate Number_11 : 3.941977297693223
-142. Type of Admission_4 : 3.6999898008253354
-143. Payment Typology 1_4 : 3.504297192834328
-144. Operating Certificate Number_133 : 3.4015877377167514
-145. Operating Certificate Number_87 : 3.371963153485664
-146. Operating Certificate Number_106 : 3.2138360570622413
-147. APR MDC Description_14 : 3.1761468421720385
-148. Operating Certificate Number_65 : 2.989540406465751
-149. Operating Certificate Number_74 : 2.8669399386742755
-150. Operating Certificate Number_40 : 2.8447357119082253
-151. Operating Certificate Number_85 : 2.788974987594176
-152. APR DRG Description_7 : 2.785785386873593
-153. Operating Certificate Number_113 : 2.7198544409697463
-154. Operating Certificate Number_111 : 2.7028114464625013
-155. Operating Certificate Number_115 : 2.6905886962378824
-156. Operating Certificate Number_101 : 2.6876593250416563
-157. Operating Certificate Number_94 : 2.6822784347871256
-158. Operating Certificate Number_100 : 2.629971016806111
-159. Operating Certificate Number_117 : 2.532968068079724
-160. Operating Certificate Number_105 : 2.509309334000417
-161. CCS Diagnosis Description_10 : 2.44510138503435
-162. Operating Certificate Number_144 : 2.4001033438490906
-163. Operating Certificate Number_56 : 2.3430597267545763
-164. Operating Certificate Number_60 : 2.28376127515775
-165. Operating Certificate Number_77 : 2.271573792109574
-166. Operating Certificate Number_95 : 2.267950206069454
-167. Operating Certificate Number_53 : 2.00618621169299
-168. Operating Certificate Number_32 : 1.9829685458081265
-169. Operating Certificate Number_50 : 1.954949882005697
-170. Operating Certificate Number_121 : 1.8219367818952856
-171. Operating Certificate Number_135 : 1.8165958798481374
-172. Operating Certificate Number_47 : 1.8010430488163702
-173. Operating Certificate Number_134 : 1.750341593743094
-174. Operating Certificate Number_37 : 1.7447100589308433
-175. Operating Certificate Number_123 : 1.5749756179278123
-176. Operating Certificate Number_102 : 1.5082337829087231
-177. Operating Certificate Number_108 : 1.432957170606194
-178. Operating Certificate Number_151 : 1.3912406679313998
-179. Operating Certificate Number_132 : 1.3852446569535515
-180. Operating Certificate Number_96 : 1.3678801098178701
-181. APR MDC Description_15 : 1.3148532669055115
-182. Operating Certificate Number_54 : 1.2987810704689906
-183. APR DRG Description_15 : 1.15901678856093
-184. Operating Certificate Number_139 : 1.1389785388923432
-185. Operating Certificate Number_68 : 1.050080746295259
-186. APR MDC Description_23 : 1.0441032857149362
-187. Operating Certificate Number_24 : 1.0369212307318934
-188. Payment Typology 1_7 : 0.863741436768854
-189. Operating Certificate Number_109 : 0.8223598672449809
-190. Operating Certificate Number_51 : 0.7687456956614709
-191. Operating Certificate Number_126 : 0.7331595166915755
-192. Operating Certificate Number_43 : 0.7169429791529754
-193. Operating Certificate Number_143 : 0.6810853144820077
-194. Operating Certificate Number_147 : 0.6669696895997308
-195. CCS Diagnosis Description_20 : 0.617876866065052
-196. APR DRG Description_17 : 0.599556000863454
-197. Operating Certificate Number_136 : 0.5243700635864864
-198. Operating Certificate Number_152 : 0.49399426404802205
-199. Operating Certificate Number_72 : 0.47933637962253756
-200. APR MDC Description_22 : 0.4585908218553053
-201. Operating Certificate Number_55 : 0.45657544439115916
-202. Operating Certificate Number_89 : 0.24250987768723406
-203. Operating Certificate Number_75 : 0.20525618886169847
-204. Operating Certificate Number_91 : 0.14469242299802754
-205. APR MDC Description_18 : 0.12951303023229374
-206. Age Group_2 : 0.12856181648309123
-207. Operating Certificate Number_149 : 0.08111331931637016
-208. APR MDC Description_20 : 0.0732229799886209
-209. Operating Certificate Number_167 : 0.05413574476771291
-210. Operating Certificate Number_80 : 0.049149829085404
-211. Operating Certificate Number_166 : 0.02143822187281662
-212. Operating Certificate Number_165 : 0.010993445490563514
-213. Hospital County : 0.0
-214. Patient Disposition : 0.0
-215. Payment Typology 2 : 0.0
-216. Payment Typology 3 : 0.0
-217. bias : 0.0
-218. Ethnicity_0 : 0.0
-219. Ethnicity_1 : 0.0
-220. Ethnicity_2 : 0.0
-221. Ethnicity_3 : 0.0
-222. Type of Admission_2 : 0.0
-223. Type of Admission_3 : 0.0
-224. Type of Admission_5 : 0.0
-225. Age Group_0 : 0.0
-226. Age Group_4 : 0.0
-227. Operating Certificate Number_5 : 0.0
-228. Operating Certificate Number_7 : 0.0
-229. Operating Certificate Number_12 : 0.0
-230. Operating Certificate Number_16 : 0.0
-231. Operating Certificate Number_18 : 0.0
-232. Operating Certificate Number_25 : 0.0
-233. Operating Certificate Number_28 : 0.0
-234. Operating Certificate Number_33 : 0.0
-235. Operating Certificate Number_34 : 0.0
-236. Operating Certificate Number_35 : 0.0
-237. Operating Certificate Number_36 : 0.0
-238. Operating Certificate Number_46 : 0.0
-239. Operating Certificate Number_59 : 0.0
-240. Operating Certificate Number_66 : 0.0
-241. Operating Certificate Number_69 : 0.0
-242. Operating Certificate Number_71 : 0.0
-243. Operating Certificate Number_76 : 0.0
-244. Operating Certificate Number_78 : 0.0
-245. Operating Certificate Number_79 : 0.0
-246. Operating Certificate Number_82 : 0.0
-247. Operating Certificate Number_83 : 0.0
-248. Operating Certificate Number_97 : 0.0
-249. Operating Certificate Number_99 : 0.0
-250. Operating Certificate Number_103 : 0.0
-251. Operating Certificate Number_104 : 0.0
-252. Operating Certificate Number_110 : 0.0
-253. Operating Certificate Number_114 : 0.0
-254. Operating Certificate Number_116 : 0.0
-255. Operating Certificate Number_118 : 0.0
-256. Operating Certificate Number_120 : 0.0
-257. Operating Certificate Number_122 : 0.0
-258. Operating Certificate Number_128 : 0.0
-259. Operating Certificate Number_129 : 0.0
-260. Operating Certificate Number_130 : 0.0
-261. Operating Certificate Number_131 : 0.0
-262. Operating Certificate Number_137 : 0.0
-263. Operating Certificate Number_138 : 0.0
-264. Operating Certificate Number_140 : 0.0
-265. Operating Certificate Number_141 : 0.0
-266. Operating Certificate Number_142 : 0.0
-267. Operating Certificate Number_145 : 0.0
-268. Operating Certificate Number_146 : 0.0
-269. Operating Certificate Number_148 : 0.0
-270. Operating Certificate Number_150 : 0.0
-271. Operating Certificate Number_153 : 0.0
-272. Operating Certificate Number_154 : 0.0
-273. Operating Certificate Number_155 : 0.0
-274. Operating Certificate Number_156 : 0.0
-275. Operating Certificate Number_157 : 0.0
-276. Operating Certificate Number_158 : 0.0
-277. Operating Certificate Number_159 : 0.0
-278. Operating Certificate Number_160 : 0.0
-279. Operating Certificate Number_161 : 0.0
-280. Operating Certificate Number_162 : 0.0
-281. Operating Certificate Number_163 : 0.0
-282. Operating Certificate Number_164 : 0.0
-283. Operating Certificate Number_168 : 0.0
-284. Operating Certificate Number_169 : 0.0
-285. Operating Certificate Number_170 : 0.0
-286. Operating Certificate Number_171 : 0.0
-287. Operating Certificate Number_172 : 0.0
-288. Operating Certificate Number_173 : 0.0
-289. Payment Typology 1_2 : 0.0
-290. Payment Typology 1_3 : 0.0
-291. Payment Typology 1_6 : 0.0
-292. Payment Typology 1_8 : 0.0
-293. Payment Typology 1_9 : 0.0
-294. APR Severity of Illness Description_0 : 0.0
-295. APR MDC Description_2 : 0.0
-296. APR MDC Description_3 : 0.0
-297. APR MDC Description_9 : 0.0
-298. APR MDC Description_12 : 0.0
-299. APR MDC Description_13 : 0.0
-300. CCS Procedure Description_1 : 0.0
-301. CCS Procedure Description_2 : 0.0
-302. CCS Procedure Description_10 : 0.0
-303. CCS Procedure Description_12 : 0.0
-304. CCS Procedure Description_13 : 0.0
-305. CCS Procedure Description_14 : 0.0
-306. CCS Procedure Description_16 : 0.0
-307. CCS Procedure Description_19 : 0.0
-308. CCS Procedure Description_20 : 0.0
-309. CCS Diagnosis Description_1 : 0.0
-310. CCS Diagnosis Description_4 : 0.0
-311. CCS Diagnosis Description_6 : 0.0
-312. CCS Diagnosis Description_7 : 0.0
-313. CCS Diagnosis Description_9 : 0.0
-314. CCS Diagnosis Description_12 : 0.0
-315. CCS Diagnosis Description_13 : 0.0
-316. CCS Diagnosis Description_14 : 0.0
-317. CCS Diagnosis Description_17 : 0.0
-318. CCS Diagnosis Description_18 : 0.0
-319. APR DRG Description_1 : 0.0
-320. APR DRG Description_5 : 0.0
-321. APR DRG Description_6 : 0.0
-322. APR DRG Description_8 : 0.0
-323. APR DRG Description_11 : 0.0
-324. APR DRG Description_13 : 0.0
-325. APR DRG Description_14 : 0.0
-326. APR DRG Description_16 : 0.0
-327. Health Service Area_Emergency Department Indicator_4 : 0.0
-328. Health Service Area_Emergency Department Indicator_6 : 0.0
-329. Health Service Area_Emergency Department Indicator_7 : 0.0
+1. Health Service Area : 5669.668646127184
+2. Length of Stay : 4603.657623423083
+3. Emergency Department Indicator : 3409.1521259687693
+4. APR Medical Surgical Description_1 : 2204.6225444092374
+5. APR Severity of Illness Code : 1647.7687026267895
+6. APR MDC Description : 1546.9421381856007
+7. Facility Name : 1512.7390730281265
+8. APR Medical Surgical Description_0 : 1470.4780154489372
+9. CCS Procedure Description_0 : 853.130856293576
+10. CCS Procedure Description : 735.3947121120143
+11. Health Service Area_Emergency Department Indicator_0 : 586.3383900139221
+12. Zip Code - 3 digits : 585.6420800977138
+13. Operating Certificate Number_0 : 336.4421643546612
+14. CCS Diagnosis Description : 323.84316079825925
+15. Type of Admission_0 : 311.6970232398196
+16. APR MDC Description_0 : 270.3000252813368
+17. Health Service Area_Emergency Department Indicator_1 : 251.04989581523878
+18. APR DRG Description_0 : 240.72955410890668
+19. APR Risk of Mortality_3 : 224.91771842508473
+20. APR Risk of Mortality_0 : 208.9523702618554
+21. APR DRG Description : 193.1132416518087
+22. APR MDC Description_8 : 189.8346768278246
+23. Operating Certificate Number_4 : 172.06247030513993
+24. APR Severity of Illness Description_3 : 171.01897974312777
+25. APR Severity of Illness Description_1 : 162.59639194566924
+26. CCS Procedure Description_6 : 153.84479792287163
+27. CCS Procedure Description_18 : 141.19765736013787
+28. APR DRG Description_3 : 135.08974226519155
+29. APR MDC Description_10 : 125.60597013992178
+30. Payment Typology 1_0 : 123.07789636995695
+31. Health Service Area_Emergency Department Indicator_2 : 115.63360942005386
+32. APR MDC Description_1 : 113.58534791900657
+33. Operating Certificate Number_23 : 111.24635930260453
+34. CCS Diagnosis Description_0 : 109.57929167351618
+35. Operating Certificate Number_29 : 95.13904257628934
+36. APR Risk of Mortality_2 : 93.32643868684532
+37. CCS Procedure Description_4 : 89.96052696382971
+38. Age Group_1 : 73.81461288652137
+39. APR DRG Description_19 : 73.77832739129995
+40. APR Severity of Illness Description_2 : 73.0769517298576
+41. CCS Diagnosis Description_2 : 57.14921384495976
+42. APR DRG Description_2 : 55.23399734692566
+43. APR MDC Description_5 : 55.22984272136237
+44. Operating Certificate Number_3 : 53.84523719851892
+45. Operating Certificate Number_1 : 53.42308053096439
+46. CCS Procedure Description_7 : 52.2267324121396
+47. Operating Certificate Number_19 : 51.24744551785053
+48. Payment Typology 1_1 : 48.46579835057994
+49. APR Risk of Mortality_1 : 42.79408641266061
+50. CCS Procedure Description_9 : 42.273044881129394
+51. CCS Procedure Description_5 : 41.92661612580326
+52. Health Service Area_Emergency Department Indicator_5 : 40.45627481724451
+53. CCS Procedure Description_8 : 39.76293360772762
+54. Operating Certificate Number_15 : 39.17815894757888
+55. Health Service Area_Emergency Department Indicator_12 : 39.10153874848389
+56. Operating Certificate Number_44 : 37.37008208356711
+57. Health Service Area_Emergency Department Indicator_3 : 35.22474042199242
+58. Operating Certificate Number_63 : 33.63022906303087
+59. CCS Diagnosis Description_11 : 33.36134445069302
+60. Operating Certificate Number_27 : 31.082340615272823
+61. Payment Typology 3 : 30.134510536379462
+62. APR MDC Description_19 : 29.854541120127543
+63. Birth Weight : 29.688918754489055
+64. Operating Certificate Number_8 : 29.61429434796037
+65. APR DRG Description_4 : 28.93214105963174
+66. Health Service Area_Emergency Department Indicator_13 : 27.89007446320973
+67. Operating Certificate Number_58 : 24.961960237689894
+68. Age Group_Emergency Department Indicator_5 : 24.014749071418464
+69. Operating Certificate Number_2 : 23.9183047006711
+70. Operating Certificate Number_38 : 23.8293315223844
+71. CCS Diagnosis Description_16 : 22.42324924147055
+72. CCS Diagnosis Description_19 : 21.949353837655114
+73. Operating Certificate Number_49 : 21.804779066696977
+74. CCS Procedure Description_11 : 21.42673633761664
+75. Age Group_Emergency Department Indicator_2 : 21.38378200304167
+76. Health Service Area_Emergency Department Indicator_8 : 19.98769354821667
+77. Operating Certificate Number_14 : 19.96043234877266
+78. Type of Admission_1 : 19.22710048444267
+79. APR DRG Description_10 : 18.952061873646414
+80. Operating Certificate Number_92 : 17.811865275399793
+81. APR DRG Description_9 : 17.51322783065166
+82. Operating Certificate Number_62 : 16.991015361371364
+83. Age Group_3 : 16.46294865063576
+84. Operating Certificate Number_17 : 16.197522946026908
+85. APR MDC Description_6 : 15.885043599664977
+86. Operating Certificate Number_93 : 15.807611926317934
+87. CCS Diagnosis Description_8 : 15.69959968312573
+88. Type of Admission_3 : 15.259142529146292
+89. Operating Certificate Number_20 : 14.720318665234252
+90. Operating Certificate Number_57 : 14.538863982092112
+91. Patient Disposition : 14.399058738948872
+92. Operating Certificate Number_31 : 13.984697199307373
+93. Operating Certificate Number_9 : 13.784753743727016
+94. Operating Certificate Number_119 : 13.38677885362355
+95. APR DRG Description_18 : 12.82406391792464
+96. Operating Certificate Number_125 : 12.759508627254714
+97. CCS Diagnosis Description_5 : 12.717371445544162
+98. Age Group_Emergency Department Indicator_9 : 12.453197184413021
+99. Operating Certificate Number_73 : 11.794698547217942
+100. Operating Certificate Number_88 : 11.399039879862661
+101. Operating Certificate Number_41 : 11.143000961862434
+102. CCS Diagnosis Description_3 : 10.969789532969024
+103. Operating Certificate Number_30 : 10.755142988968926
+104. APR MDC Description_7 : 10.742637001913772
+105. Health Service Area_Emergency Department Indicator_11 : 10.512072847836208
+106. Operating Certificate Number_21 : 10.305420642451002
+107. Operating Certificate Number_26 : 10.294296777174221
+108. CCS Procedure Description_3 : 10.286049941852855
+109. Operating Certificate Number_64 : 10.262527858940066
+110. Operating Certificate Number_90 : 10.251055436592916
+111. Operating Certificate Number_86 : 10.003442852590895
+112. Health Service Area_Emergency Department Indicator_10 : 9.889685011387295
+113. Health Service Area_Emergency Department Indicator_9 : 9.674870246429947
+114. Operating Certificate Number_42 : 9.485728077730514
+115. Operating Certificate Number_124 : 9.27891646002481
+116. APR MDC Description_4 : 8.930912992672942
+117. APR MDC Description_16 : 8.782802943868242
+118. Operating Certificate Number_127 : 8.569026488795988
+119. CCS Procedure Description_17 : 8.336413705788514
+120. Operating Certificate Number_22 : 7.864043038399748
+121. APR DRG Description_20 : 7.772089066509173
+122. Operating Certificate Number_10 : 7.619916435505193
+123. Payment Typology 1_5 : 7.505287270613295
+124. Operating Certificate Number_112 : 7.058444459631855
+125. Operating Certificate Number_70 : 7.014746830670633
+126. Operating Certificate Number_67 : 6.908992453042504
+127. APR MDC Description_11 : 6.89541293652812
+128. CCS Diagnosis Description_15 : 6.7315602846520175
+129. Operating Certificate Number_81 : 6.100437111185645
+130. Operating Certificate Number_6 : 5.873124617301125
+131. Operating Certificate Number_52 : 5.712089316075215
+132. APR MDC Description_17 : 5.700915527936706
+133. APR DRG Description_12 : 5.683822611208297
+134. APR MDC Description_21 : 5.427907707918085
+135. CCS Procedure Description_15 : 5.289173412443788
+136. Operating Certificate Number_45 : 5.197181339386243
+137. Operating Certificate Number_39 : 5.146228975124178
+138. Operating Certificate Number_98 : 5.086325608016297
+139. Operating Certificate Number_61 : 5.085193417346771
+140. Operating Certificate Number_13 : 4.9167997704210835
+141. Operating Certificate Number_48 : 4.902581468074114
+142. Operating Certificate Number_11 : 4.893850553762213
+143. Payment Typology 1_4 : 4.833222283057026
+144. Operating Certificate Number_107 : 4.714226605165188
+145. Age Group_2 : 4.201459495010599
+146. Operating Certificate Number_84 : 4.012360366060157
+147. APR MDC Description_14 : 3.73719725937834
+148. Age Group_0 : 3.7325764539960358
+149. Operating Certificate Number_65 : 3.693060808744904
+150. Operating Certificate Number_133 : 3.618425973855141
+151. Operating Certificate Number_87 : 3.61521247460659
+152. Operating Certificate Number_106 : 3.599084209325635
+153. CCS Diagnosis Description_10 : 3.544761342819064
+154. APR DRG Description_7 : 3.359294081076428
+155. Operating Certificate Number_94 : 3.2686126937925075
+156. Operating Certificate Number_50 : 3.208614133980778
+157. Operating Certificate Number_40 : 3.124212655867062
+158. Operating Certificate Number_100 : 3.1193760401928468
+159. Operating Certificate Number_85 : 3.082426612659842
+160. Operating Certificate Number_101 : 3.0723862507910558
+161. Operating Certificate Number_105 : 3.0111510294586012
+162. Operating Certificate Number_115 : 2.975240447626035
+163. Operating Certificate Number_111 : 2.940006973797619
+164. Type of Admission_4 : 2.8994253090221473
+165. Operating Certificate Number_117 : 2.89198587199092
+166. Operating Certificate Number_37 : 2.8615780605292316
+167. Operating Certificate Number_74 : 2.825252046125532
+168. Operating Certificate Number_95 : 2.7913085910994355
+169. Operating Certificate Number_113 : 2.776421090207022
+170. Health Service Area_Emergency Department Indicator_7 : 2.710076190090694
+171. Operating Certificate Number_60 : 2.7072354569123678
+172. Operating Certificate Number_56 : 2.686101962793876
+173. Operating Certificate Number_144 : 2.6022925075659855
+174. Operating Certificate Number_77 : 2.5127053577287226
+175. Operating Certificate Number_32 : 2.2494806468414783
+176. Operating Certificate Number_53 : 2.1720837869748255
+177. Operating Certificate Number_121 : 2.159858209210605
+178. Operating Certificate Number_134 : 2.033073378951329
+179. Operating Certificate Number_135 : 1.9272475347466556
+180. Operating Certificate Number_51 : 1.8860022263887168
+181. Operating Certificate Number_123 : 1.8853205520570864
+182. Operating Certificate Number_96 : 1.8784352937577786
+183. Operating Certificate Number_102 : 1.8729892395922838
+184. APR MDC Description_15 : 1.7678745220712757
+185. Operating Certificate Number_47 : 1.7634558609596658
+186. Operating Certificate Number_108 : 1.7219528756345543
+187. Operating Certificate Number_132 : 1.6176110355175128
+188. APR DRG Description_15 : 1.6058168083663311
+189. Operating Certificate Number_68 : 1.5993097598321642
+190. Operating Certificate Number_54 : 1.5987289147467072
+191. Operating Certificate Number_151 : 1.5869452509430348
+192. Operating Certificate Number_139 : 1.5089835335443267
+193. Payment Typology 1_7 : 1.504853805488259
+194. Operating Certificate Number_16 : 1.2305707431265724
+195. APR MDC Description_23 : 1.2233743344236059
+196. Operating Certificate Number_55 : 1.0907135435579596
+197. APR DRG Description_17 : 1.0744804115720814
+198. Operating Certificate Number_147 : 0.9712868705171394
+199. Operating Certificate Number_109 : 0.9336846895999309
+200. Operating Certificate Number_24 : 0.9243771203536341
+201. CCS Diagnosis Description_20 : 0.9128874179254243
+202. Operating Certificate Number_126 : 0.9104718879747875
+203. Operating Certificate Number_143 : 0.7944880213935611
+204. Operating Certificate Number_136 : 0.7942203460499757
+205. Operating Certificate Number_75 : 0.7395218493623343
+206. Operating Certificate Number_80 : 0.7053351021736933
+207. Operating Certificate Number_72 : 0.6979009930624811
+208. Operating Certificate Number_152 : 0.6842023397979062
+209. APR MDC Description_22 : 0.6734947779164709
+210. Operating Certificate Number_71 : 0.6191925722424011
+211. Operating Certificate Number_89 : 0.5702051189827284
+212. APR MDC Description_18 : 0.535004704098999
+213. Operating Certificate Number_91 : 0.5138240278619879
+214. CCS Procedure Description_19 : 0.3956086838416741
+215. APR MDC Description_20 : 0.2951189958659669
+216. Operating Certificate Number_149 : 0.2841558770474108
+217. CCS Procedure Description_1 : 0.24416121902489799
+218. Operating Certificate Number_116 : 0.1573293677373104
+219. Operating Certificate Number_43 : 0.14950293873497764
+220. Operating Certificate Number_153 : 0.13544040412521852
+221. Operating Certificate Number_148 : 0.1251335436226704
+222. Operating Certificate Number_165 : 0.08324750345258233
+223. Operating Certificate Number_167 : 0.06843841747938714
+224. Operating Certificate Number_166 : 0.03939865178146778
+225. Hospital County : 0.0
+226. Payment Typology 2 : 0.0
+227. bias : 0.0
+228. Ethnicity_0 : 0.0
+229. Ethnicity_1 : 0.0
+230. Ethnicity_2 : 0.0
+231. Ethnicity_3 : 0.0
+232. Type of Admission_2 : 0.0
+233. Type of Admission_5 : 0.0
+234. Age Group_4 : 0.0
+235. Operating Certificate Number_5 : 0.0
+236. Operating Certificate Number_7 : 0.0
+237. Operating Certificate Number_12 : 0.0
+238. Operating Certificate Number_18 : 0.0
+239. Operating Certificate Number_25 : 0.0
+240. Operating Certificate Number_28 : 0.0
+241. Operating Certificate Number_33 : 0.0
+242. Operating Certificate Number_34 : 0.0
+243. Operating Certificate Number_35 : 0.0
+244. Operating Certificate Number_36 : 0.0
+245. Operating Certificate Number_46 : 0.0
+246. Operating Certificate Number_59 : 0.0
+247. Operating Certificate Number_66 : 0.0
+248. Operating Certificate Number_69 : 0.0
+249. Operating Certificate Number_76 : 0.0
+250. Operating Certificate Number_78 : 0.0
+251. Operating Certificate Number_79 : 0.0
+252. Operating Certificate Number_82 : 0.0
+253. Operating Certificate Number_83 : 0.0
+254. Operating Certificate Number_97 : 0.0
+255. Operating Certificate Number_99 : 0.0
+256. Operating Certificate Number_103 : 0.0
+257. Operating Certificate Number_104 : 0.0
+258. Operating Certificate Number_110 : 0.0
+259. Operating Certificate Number_114 : 0.0
+260. Operating Certificate Number_118 : 0.0
+261. Operating Certificate Number_120 : 0.0
+262. Operating Certificate Number_122 : 0.0
+263. Operating Certificate Number_128 : 0.0
+264. Operating Certificate Number_129 : 0.0
+265. Operating Certificate Number_130 : 0.0
+266. Operating Certificate Number_131 : 0.0
+267. Operating Certificate Number_137 : 0.0
+268. Operating Certificate Number_138 : 0.0
+269. Operating Certificate Number_140 : 0.0
+270. Operating Certificate Number_141 : 0.0
+271. Operating Certificate Number_142 : 0.0
+272. Operating Certificate Number_145 : 0.0
+273. Operating Certificate Number_146 : 0.0
+274. Operating Certificate Number_150 : 0.0
+275. Operating Certificate Number_154 : 0.0
+276. Operating Certificate Number_155 : 0.0
+277. Operating Certificate Number_156 : 0.0
+278. Operating Certificate Number_157 : 0.0
+279. Operating Certificate Number_158 : 0.0
+280. Operating Certificate Number_159 : 0.0
+281. Operating Certificate Number_160 : 0.0
+282. Operating Certificate Number_161 : 0.0
+283. Operating Certificate Number_162 : 0.0
+284. Operating Certificate Number_163 : 0.0
+285. Operating Certificate Number_164 : 0.0
+286. Operating Certificate Number_168 : 0.0
+287. Operating Certificate Number_169 : 0.0
+288. Operating Certificate Number_170 : 0.0
+289. Operating Certificate Number_171 : 0.0
+290. Operating Certificate Number_172 : 0.0
+291. Operating Certificate Number_173 : 0.0
+292. Payment Typology 1_2 : 0.0
+293. Payment Typology 1_3 : 0.0
+294. Payment Typology 1_6 : 0.0
+295. Payment Typology 1_8 : 0.0
+296. Payment Typology 1_9 : 0.0
+297. APR Severity of Illness Description_0 : 0.0
+298. APR MDC Description_2 : 0.0
+299. APR MDC Description_3 : 0.0
+300. APR MDC Description_9 : 0.0
+301. APR MDC Description_12 : 0.0
+302. APR MDC Description_13 : 0.0
+303. CCS Procedure Description_2 : 0.0
+304. CCS Procedure Description_10 : 0.0
+305. CCS Procedure Description_12 : 0.0
+306. CCS Procedure Description_13 : 0.0
+307. CCS Procedure Description_14 : 0.0
+308. CCS Procedure Description_16 : 0.0
+309. CCS Procedure Description_20 : 0.0
+310. CCS Diagnosis Description_1 : 0.0
+311. CCS Diagnosis Description_4 : 0.0
+312. CCS Diagnosis Description_6 : 0.0
+313. CCS Diagnosis Description_7 : 0.0
+314. CCS Diagnosis Description_9 : 0.0
+315. CCS Diagnosis Description_12 : 0.0
+316. CCS Diagnosis Description_13 : 0.0
+317. CCS Diagnosis Description_14 : 0.0
+318. CCS Diagnosis Description_17 : 0.0
+319. CCS Diagnosis Description_18 : 0.0
+320. APR DRG Description_1 : 0.0
+321. APR DRG Description_5 : 0.0
+322. APR DRG Description_6 : 0.0
+323. APR DRG Description_8 : 0.0
+324. APR DRG Description_11 : 0.0
+325. APR DRG Description_13 : 0.0
+326. APR DRG Description_14 : 0.0
+327. APR DRG Description_16 : 0.0
+328. Health Service Area_Emergency Department Indicator_4 : 0.0
+329. Health Service Area_Emergency Department Indicator_6 : 0.0
 330. Health Service Area_Emergency Department Indicator_14 : 0.0
 331. Health Service Area_Emergency Department Indicator_15 : 0.0
 332. Age Group_Emergency Department Indicator_0 : 0.0
