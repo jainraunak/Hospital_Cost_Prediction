@@ -43,7 +43,7 @@ reg_upper_limit = dic['regularisation_penalty_upper_limit']
 random_searches = dic['random_searches']
 
 if "a" in dic['parts']:
-    # Do Part a
+    # Do Part a : Use Linear Regression to predict Total Costs
     start = time.time()
     print(colored('Part a started ... ', 'magenta'))
     solve_a(X_train=X_train, Y_train=Y_train, X_test=X_test, results_path=results_path)
@@ -53,7 +53,7 @@ if "a" in dic['parts']:
     print(colored('Part a finished (' + str(round(end - start, 2)) + ' s)', 'magenta'))
 
 if "b" in dic['parts']:
-    # Do Part b
+    # Do Part b : Use Ridge Regression to predict Total Costs
     start = time.time()
     print(colored('Part b started ... ', 'magenta'))
     solve_b(X_train=X_train, Y_train=Y_train, X_test=X_test, results_path=results_path, regc=regc, k=k)
@@ -63,7 +63,7 @@ if "b" in dic['parts']:
     print(colored('Part b finished (' + str(round(end - start, 2)) + ' s)', 'magenta'))
 
 if "c" in dic['parts']:
-    # Do Part c
+    # Do Part c : Use Feature Engineering to improve R2 Score
     start = time.time()
     print(colored('Part c started ... ', 'magenta'))
     solve_c(train_data=train_data, test_data=test_data, results_path=results_path, k=k,
